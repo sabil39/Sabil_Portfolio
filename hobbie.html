@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style3.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .home-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 0;
+      flex-direction: column;
+    }
+
+    .hobby-section, .project-section {
+      background-color: #e0c08f;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .hobby-section h1, .project-section h1 {
+      text-align: center;
+      color: #a16100;
+      margin-bottom: 20px;
+    }
+
+    .hobby-section p, .project-section p {
+      font-size: 1.1em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hobby-list, .project-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .hobby-list li, .project-list li {
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      margin-bottom: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .hobby-list li:hover, .project-list li:hover {
+      transform: translateX(5px);
+    }
+
+    .hobby-list img, .project-list img {
+      width: 24px;
+      margin-right: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h2 class="logo">Sal-Sabil</h2>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index3.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobbie.html" class="active">Interests</a></li>
+        <li><a href="movies.html">Movies</a></li>
+
+        <li><a href="https://discord.gg/TX8rMTzJ" target="_blank">CSE391 Channel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-section">
+<!-- ------------------------------------Hobbie---------------------------------------------------->
+    <div class="hobby-section">
+      <h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/11719/11719524.png" alt="Book Icon" width="30" style="vertical-align: middle; margin-right: 10px;">
+        My Hobbies
+      </h1>
+      <p>When I’m not busy with studying, I enjoy activities that help me relax and be productive. Here are some of my favorites:</p>
+      <ul class="hobby-list">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/708/708881.png" alt="Book">Reading books – Specially books of &nbsp; <strong style="color: #5f4218;"> "Khaled Hosseini"</strong></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/15485/15485088.png" alt="Film">Watching Slow Films and Web Series which are usually a part of Slice Of Life Genre</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/2013/2013418.png" alt="Sketch">Making Random Sketches whenever ideas come up</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/4424/4424556.png" alt="Journal">Writing Journals and Making Scrapbooks for Special Memories</li>
+      </ul>
+    </div>
+
+<!-- -----------------------------------Project----------------------------------------------------->
+    <div class="project-section">
+      <h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="Projects Icon" width="30" style="vertical-align: middle; margin-right: 10px;">
+        My Projects
+      </h1>
+      <p>Along with my hobbies, I have worked on different projects as a part of my university life. Here are a few of them:</p>
+      <ul class="project-list">
+        <li><img src="https://cdn-icons-png.flaticon.com/512/11998/11998652.png" alt="Web">Developed an&nbsp;<strong style="color: #5f4218;">Educational Management System</strong>&nbsp; using HTML, CSS, and PHP with my teammates.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/3045/3045363.png" alt="Code">Contributed on developing a&nbsp;<strong style="color: #5f4218;">Volunteer Platform</strong> &nbsp;using Mern Stack.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/16507/16507181.png" alt="App">Created a 2D&nbsp;<strong style="color: #5f4218;">LUDO Game</strong> &nbsp;with my teammates.</li>
+        
+      </ul>
+    </div>
+  </main>
+
+  <footer style="background: transparent; text-align: center; padding: 20px;">
+    <p style="margin: 0; font-size: 0.8em;">&copy; 2025 Sal Sabil</p>
+    <p id="location" style="margin-top: 5px; font-size: 0.8em;"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
